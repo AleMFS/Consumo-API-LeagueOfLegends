@@ -4,7 +4,7 @@ loadChampions()
 function loadChampions() {
 
 
-    fetch('http://ddragon.leagueoflegends.com/cdn/12.16.1/data/pt_BR/champion.json')
+    fetch('http://ddragon.leagueoflegends.com/cdn/12.23.1/data/pt_BR/champion.json')
         .then(function (resultado) {
             return resultado.json();
         })
@@ -33,7 +33,7 @@ function montarLista(lista) {
 
         champion.setAttribute(`class`, `champ ${i} ${dados[i][1].id}`);
 
-        champion.style.backgroundImage = `url( 'http://ddragon.leagueoflegends.com/cdn/12.16.1/img/champion/${dados[i][1].id}.png')`;
+        champion.style.backgroundImage = `url( 'http://ddragon.leagueoflegends.com/cdn/12.23.1/img/champion/${dados[i][1].id}.png')`;
 
         const championName = document.createElement('span');
 
